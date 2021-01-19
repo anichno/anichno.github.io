@@ -2,6 +2,8 @@
 layout: post
 title:  "USB Switcher"
 tags: hardware 3dprinting arduino
+description: Custom USB Switch
+image: /images/usb_switcher/finished_front.jpg
 ---
 
 - [Introduction](#introduction)
