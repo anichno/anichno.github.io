@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"  class="theme--dark" >
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://howdoiinternet.com/images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://howdoiinternet.com/images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://howdoiinternet.com/images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://howdoiinternet.com/images/apple-touch-icon-57x57.png" />
+  <link rel="short icon" href="https://howdoiinternet.com/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://howdoiinternet.com/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <title>How do I internet? • USB Switcher</title>
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="How do I internet?" href="https://howdoiinternet.com/rss.xml">
+  
+  
+  
+  
+</head>
+
+<body>
+    <div id="sidebar" class="animated fadeInDown">
+      <div class="logo-title">
+        <div class="title">
+          <img src=https://howdoiinternet.com/images/logo@2x.png style="width:127px;" alt="logo" />
+          <h3><a href="https://howdoiinternet.com/">How do I internet?</a></h3>
+          <div class="description">
+            <p>Anthony&#x27;s projects and musings</p>
+          </div>
+        </div>
+      </div>
+      <ul class="social-links"><li><a href="https://github.com/anichno" aria-label="Go to Github profile page"><i
+              class="fab fa-github"></i></a></li>
+        
+      </ul>
+      <div class="footer">
+        
+        <span>Theme from </span><a href="https://github.com/longfangsong/anatole-zola">anatole-zola</a>
+        
+      </div>
+  </div>
+  <div id="main">
+    <div class="page-top animated fadeInDown">
+      <div class="nav">
+        
+        
+        
+        
+        <li><a  href="https://howdoiinternet.com/">Home</a></li>
+        <li><a  href="https://howdoiinternet.com/about/">About</a></li><li><a 
+            href="https://howdoiinternet.com/archive/">Archive</a></li></div>
+      <div class="information">
+        <div class="back_btn">
+          <a onclick="window.history.go(-1)" ><i
+              class="fas fa-chevron-left"></i></a>
+        </div>
+        
+        
+        
+        <div class="avatar"><img src="https://howdoiinternet.com/images/avatar.jpg"></div>
+      </div>
+    </div>
+    <div class="autopagerize_page_element">
+      <div class="content">
+        
+<article class="post animated fadeInDown">
+  <h1><a href="https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&#x2F;">USB Switcher</a></h1>
+  
+  <div class="post-content"><ul>
+<li><a href="https://howdoiinternet.com/usb-switcher/#introduction">Introduction</a></li>
+<li><a href="https://howdoiinternet.com/usb-switcher/#problem">Problem</a></li>
+<li><a href="https://howdoiinternet.com/usb-switcher/#solution">Solution</a>
+<ul>
+<li><a href="https://howdoiinternet.com/usb-switcher/#bonus-feature">Bonus Feature</a></li>
+<li><a href="https://howdoiinternet.com/usb-switcher/#make-your-own">Make your own</a></li>
+</ul>
+</li>
+<li><a href="https://howdoiinternet.com/usb-switcher/#discussion">Discussion</a></li>
+<li><a href="https://howdoiinternet.com/usb-switcher/#lessons-learned">Lessons Learned</a></li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>As a part of my work from home setup, I put together a &quot;poor man's KVM&quot;. I have 3 computers, 2 monitors, and 1 mouse/keyboard. The first and second computers can share a monitor, and the third gets its own. For switching the display between the  2 computers I just use a simple <a href="https://www.amazon.com/gp/product/B076ZKZLXT">DisplayPort Switch</a>. To share the keyboard/mouse between the 3 computers, I use a <a href="https://www.amazon.com/gp/product/B07FDNTS34">4 way USB switch</a>.</p>
+<p><img src="/images/usb_switcher/displayport_switch_.jpg" alt="DisplayPort Switch" /></p>
+<blockquote>
+<p>DisplayPort Switch</p>
+</blockquote>
+<p><img src="/images/usb_switcher/usb_switch.jpg" alt="USB Switch" /></p>
+<blockquote>
+<p>USB Switch</p>
+</blockquote>
+<h1 id="problem">Problem</h1>
+<p>This setup works reasonably well. Since the DisplayPort connection physically switches between devices, I don't have to worry about latency at higher framerates. The problem is how you switch the USB Switch. They give you a little button on a 6 ft cable and you press that to move to the next computer. You have to think about which computer you are on and press it the correct number of times. If you want to go back to the previous computer, it results in 3 button presses. Do that enough times and it gets old really quick.</p>
+<h1 id="solution">Solution</h1>
+<p>I built my own switch box! Each physical key on it maps to a specific computer. An LED backlight on the key indicates the currently active computer.</p>
+<p><img src="/images/usb_switcher/finished_front.jpg" alt="Final Build Front" />
+<img src="/images/usb_switcher/finished_side.jpg" alt="Final Build Side" />
+<img src="/images/usb_switcher/finished_back.jpg" alt="Final Build Back" />
+<img src="/images/usb_switcher/finished_bottom.jpg" alt="Final Build Bottom" /></p>
+<h2 id="bonus-feature">Bonus Feature</h2>
+<p>What happens if the switch box boots up but the first computer isn't the active one? If you press all 4 buttons together, it switches into a &quot;manual&quot; mode. Just press the first button until computer #1 is active, then press button 4 to go back to regular mode.</p>
+<h2 id="make-your-own">Make your own</h2>
+<ul>
+<li>Code is available on my <a href="https://github.com/anichno/usb-switcher">GitHub</a></li>
+<li>STL files for the shell on <a href="https://www.thingiverse.com/thing:4728668">Thingiverse</a></li>
+<li>Parts (estimated, I didn't create a log of parts while building):
+<ul>
+<li>1x 3x7 CM PCB - <a href="https://www.amazon.com/gp/product/B072Z7Y19F">I used this one</a></li>
+<li>4x cherry keyboard switches</li>
+<li>1x SparkFun RedStick (retired, so maybe replace with a small form factor Arduino?) <a href="https://www.sparkfun.com/products/retired/13741">RedStick for reference</a></li>
+<li>1x <a href="https://www.sparkfun.com/products/11570">TRRS 3.5mm Jack Breakout</a></li>
+<li>1x 2.5mm Male to 3.5 Male 4 Conductor Audio Cable</li>
+<li>6x M3x8 Bolts</li>
+<li>2x M3 heat-set inserts (to hold the front key box to the main shell. If you modify the STL to shrink the hole size that would probably be fine. I just like heat-set inserts) <a href="https://www.amazon.com/gp/product/B087NBYF65">example</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="discussion">Discussion</h1>
+<p>First I needed to determine how the button worked. It is just a snap-together part, so disassembly is really easy.</p>
+<p><img src="/images/usb_switcher/button.jpg" alt="button" /></p>
+<p>Looks like it's just 2 wires. A quick check with a multimeter in continuity mode shows that the tip and the ring of the TRRS connector are connected when you push the button. Using the multimeter to check when plugged into the actual USB Switch Hub shows that the tip is held at 5V and the ring is ground. Easy enough, we just need to hold the tip HIGH until we want to &quot;click&quot; it, during which we will briefly bring it LOW.</p>
+<p>The keyboard keys are easy as well. I just set the Arduino's pins to INPUT_PULLUP to pull the pins high via an internal resistor. When you press the keyboard key it will connect the pin to ground, bringing it LOW.</p>
+<p>Since I'll only have at most 2 LEDs on at a time (manual mode), I'm going to cheat and use a single current limiting resistor for all 4 LEDs.</p>
+<p><img src="/images/usb_switcher/schematic.png" alt="schematic" /></p>
+<p>With the hardware designed, I soldered it together to start playing with it. I did run into a snag here (this is why you make an electrical schematic). I originally used the 220-ohm resistor as the ground for the buttons. This created an issue where if an LED was on, the buttons would never be able to go LOW when pressed (held HIGH by LED). Originally I made a mess in my code which turned off the LEDs to sample the button, then turned them back on. I figured this was just too nasty to allow, so I went ahead and re-soldered the board to make the buttons actually used ground.</p>
+<p><img src="/images/usb_switcher/prototype.jpg" alt="prototype" /></p>
+<blockquote>
+<p>Original button shown just behind</p>
+</blockquote>
+<p>The code is pretty simple. It just tracks which is the currently active computer, checks for button presses, and if a button is pressed it sends the appropriate number of pulses to switch to that computer.</p>
+<p>Once the prototype was working, I just modeled up a case in Fusion 360 and printed it on my 3d printer. I ran into issues printing the thin columns of the key mount (shown in orange below). They were very thin with nothing surrounding them. To fix it I added some ribs connecting the top to bottom.</p>
+<p><img src="/images/usb_switcher/exploded_view.png" alt="exploded view" />
+<img src="/images/usb_switcher/fusion_assembly.png" alt="fusion assembly" /></p>
+<h1 id="lessons-learned">Lessons Learned</h1>
+<ul>
+<li>No matter how simple the wiring will be, make an electrical schematic. It will let you better check your work and find hardware bugs much earlier.</li>
+<li>Tall, thin walls need support. Even a thin rib is much better than nothing.</li>
+</ul>
+</div>
+  <div class="post-footer">
+    <div class="meta">
+      <div class="info">
+        
+          <i class="far fa-sun"></i><span class="date">2021-01-18</span>
+        
+        
+          <i class="fas fa-tags"></i>
+          
+            <a class="tag" href="https://howdoiinternet.com/tags/hardware">&nbsp;hardware</a>
+          
+            <a class="tag" href="https://howdoiinternet.com/tags/3dprinting">&nbsp;3dprinting</a>
+          
+            <a class="tag" href="https://howdoiinternet.com/tags/arduino">&nbsp;arduino</a>
+          
+        
+      </div>
+    </div>
+  </div>
+</article>
+<div class="share">
+  <div class="twitter">
+    <a class="fab fa-twitter" href="http://twitter.com/share?text=USB Switcher&url=https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&hashtags=hardware,3dprinting,arduino"></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  
+  
+  <script>
+    function showLanguages() {
+      let currentDisplay = document.getElementById("languages").style.display;
+      if (currentDisplay == 'none') {
+        document.getElementById("languages").style.display = 'block';
+      } else {
+        document.getElementById("languages").style.display = 'none';
+      }
+    }
+  </script>
+</body>
+
+</html>

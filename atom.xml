@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>How do I internet?</title>
+	<subtitle>Anthony&#x27;s projects and musings</subtitle>
+	<link href="https://howdoiinternet.com/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://howdoiinternet.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-01-18T00:00:00+00:00</updated>
+	<id>https://howdoiinternet.com/atom.xml</id>
+	<entry xml:lang="en">
+		<title>USB Switcher</title>
+		<published>2021-01-18T00:00:00+00:00</published>
+		<updated>2021-01-18T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://howdoiinternet.com/usb-switcher/" type="text/html"/>
+		<id>https://howdoiinternet.com/usb-switcher/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&#x2F;#introduction&quot;&gt;Introduction&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&#x2F;#problem&quot;&gt;Problem&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&#x2F;#solution&quot;&gt;Solution&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&#x2F;#bonus-feature&quot;&gt;Bonus Feature&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&#x2F;#make-your-own&quot;&gt;Make your own&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&#x2F;#discussion&quot;&gt;Discussion&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;howdoiinternet.com&#x2F;usb-switcher&#x2F;#lessons-learned&quot;&gt;Lessons Learned&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h1&gt;
+&lt;p&gt;As a part of my work from home setup, I put together a &amp;quot;poor man&#x27;s KVM&amp;quot;. I have 3 computers, 2 monitors, and 1 mouse&#x2F;keyboard. The first and second computers can share a monitor, and the third gets its own. For switching the display between the  2 computers I just use a simple &lt;a href=&quot;https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;product&#x2F;B076ZKZLXT&quot;&gt;DisplayPort Switch&lt;&#x2F;a&gt;. To share the keyboard&#x2F;mouse between the 3 computers, I use a &lt;a href=&quot;https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;product&#x2F;B07FDNTS34&quot;&gt;4 way USB switch&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;displayport_switch_.jpg&quot; alt=&quot;DisplayPort Switch&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DisplayPort Switch&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;usb_switch.jpg&quot; alt=&quot;USB Switch&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;USB Switch&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h1 id=&quot;problem&quot;&gt;Problem&lt;&#x2F;h1&gt;
+&lt;p&gt;This setup works reasonably well. Since the DisplayPort connection physically switches between devices, I don&#x27;t have to worry about latency at higher framerates. The problem is how you switch the USB Switch. They give you a little button on a 6 ft cable and you press that to move to the next computer. You have to think about which computer you are on and press it the correct number of times. If you want to go back to the previous computer, it results in 3 button presses. Do that enough times and it gets old really quick.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;&#x2F;h1&gt;
+&lt;p&gt;I built my own switch box! Each physical key on it maps to a specific computer. An LED backlight on the key indicates the currently active computer.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;finished_front.jpg&quot; alt=&quot;Final Build Front&quot; &#x2F;&gt;
+&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;finished_side.jpg&quot; alt=&quot;Final Build Side&quot; &#x2F;&gt;
+&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;finished_back.jpg&quot; alt=&quot;Final Build Back&quot; &#x2F;&gt;
+&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;finished_bottom.jpg&quot; alt=&quot;Final Build Bottom&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bonus-feature&quot;&gt;Bonus Feature&lt;&#x2F;h2&gt;
+&lt;p&gt;What happens if the switch box boots up but the first computer isn&#x27;t the active one? If you press all 4 buttons together, it switches into a &amp;quot;manual&amp;quot; mode. Just press the first button until computer #1 is active, then press button 4 to go back to regular mode.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;make-your-own&quot;&gt;Make your own&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Code is available on my &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;anichno&#x2F;usb-switcher&quot;&gt;GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;STL files for the shell on &lt;a href=&quot;https:&#x2F;&#x2F;www.thingiverse.com&#x2F;thing:4728668&quot;&gt;Thingiverse&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Parts (estimated, I didn&#x27;t create a log of parts while building):
+&lt;ul&gt;
+&lt;li&gt;1x 3x7 CM PCB - &lt;a href=&quot;https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;product&#x2F;B072Z7Y19F&quot;&gt;I used this one&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;4x cherry keyboard switches&lt;&#x2F;li&gt;
+&lt;li&gt;1x SparkFun RedStick (retired, so maybe replace with a small form factor Arduino?) &lt;a href=&quot;https:&#x2F;&#x2F;www.sparkfun.com&#x2F;products&#x2F;retired&#x2F;13741&quot;&gt;RedStick for reference&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;1x &lt;a href=&quot;https:&#x2F;&#x2F;www.sparkfun.com&#x2F;products&#x2F;11570&quot;&gt;TRRS 3.5mm Jack Breakout&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;1x 2.5mm Male to 3.5 Male 4 Conductor Audio Cable&lt;&#x2F;li&gt;
+&lt;li&gt;6x M3x8 Bolts&lt;&#x2F;li&gt;
+&lt;li&gt;2x M3 heat-set inserts (to hold the front key box to the main shell. If you modify the STL to shrink the hole size that would probably be fine. I just like heat-set inserts) &lt;a href=&quot;https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;product&#x2F;B087NBYF65&quot;&gt;example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;discussion&quot;&gt;Discussion&lt;&#x2F;h1&gt;
+&lt;p&gt;First I needed to determine how the button worked. It is just a snap-together part, so disassembly is really easy.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;button.jpg&quot; alt=&quot;button&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Looks like it&#x27;s just 2 wires. A quick check with a multimeter in continuity mode shows that the tip and the ring of the TRRS connector are connected when you push the button. Using the multimeter to check when plugged into the actual USB Switch Hub shows that the tip is held at 5V and the ring is ground. Easy enough, we just need to hold the tip HIGH until we want to &amp;quot;click&amp;quot; it, during which we will briefly bring it LOW.&lt;&#x2F;p&gt;
+&lt;p&gt;The keyboard keys are easy as well. I just set the Arduino&#x27;s pins to INPUT_PULLUP to pull the pins high via an internal resistor. When you press the keyboard key it will connect the pin to ground, bringing it LOW.&lt;&#x2F;p&gt;
+&lt;p&gt;Since I&#x27;ll only have at most 2 LEDs on at a time (manual mode), I&#x27;m going to cheat and use a single current limiting resistor for all 4 LEDs.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;schematic.png&quot; alt=&quot;schematic&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;With the hardware designed, I soldered it together to start playing with it. I did run into a snag here (this is why you make an electrical schematic). I originally used the 220-ohm resistor as the ground for the buttons. This created an issue where if an LED was on, the buttons would never be able to go LOW when pressed (held HIGH by LED). Originally I made a mess in my code which turned off the LEDs to sample the button, then turned them back on. I figured this was just too nasty to allow, so I went ahead and re-soldered the board to make the buttons actually used ground.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;prototype.jpg&quot; alt=&quot;prototype&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Original button shown just behind&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;The code is pretty simple. It just tracks which is the currently active computer, checks for button presses, and if a button is pressed it sends the appropriate number of pulses to switch to that computer.&lt;&#x2F;p&gt;
+&lt;p&gt;Once the prototype was working, I just modeled up a case in Fusion 360 and printed it on my 3d printer. I ran into issues printing the thin columns of the key mount (shown in orange below). They were very thin with nothing surrounding them. To fix it I added some ribs connecting the top to bottom.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;exploded_view.png&quot; alt=&quot;exploded view&quot; &#x2F;&gt;
+&lt;img src=&quot;&#x2F;images&#x2F;usb_switcher&#x2F;fusion_assembly.png&quot; alt=&quot;fusion assembly&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;No matter how simple the wiring will be, make an electrical schematic. It will let you better check your work and find hardware bugs much earlier.&lt;&#x2F;li&gt;
+&lt;li&gt;Tall, thin walls need support. Even a thin rib is much better than nothing.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
